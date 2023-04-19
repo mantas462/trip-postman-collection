@@ -13,8 +13,7 @@
 				"disabledSystemHeaders": {
 					"user-agent": true,
 					"accept-encoding": true,
-					"content-type": true,
-					"accept": true
+					"content-type": true
 				}
 			},
 			"request": {
@@ -34,7 +33,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\": \"Mantas\",\r\n    \"lastName\": \"Nacickas\",\r\n    \"email\": \"nacickasmantas2@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"tripLength\": 21,\r\n    \"seasonTypeDto\": \"WINTER\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
