@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "23981e06-a4ae-4b34-8eb9-4c7334973ec2",
+		"name": "Trip applicaiton collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26797148"
+	},
+	"item": [
+		{
+			"name": "Plan trip",
+			"protocolProfileBehavior": {
+				"disableUrlEncoding": false,
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-type": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.plan-trip-request.api.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Mantas\",\r\n    \"lastName\": \"Nacickas\",\r\n    \"email\": \"nacickasmantas2@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/trip",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create items",
+			"protocolProfileBehavior": {
+				"disableUrlEncoding": false,
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept-encoding": true,
+					"content-type": true,
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.create-item-request.api.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \r\n        \"name\": \"mantas\"\r\n        \r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/item",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
